@@ -2,11 +2,11 @@
 function submitCareers() {
 
   // Get what the user typed in each field
-  var title = document.getElementById("title").value;
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
+  let title = document.getElementById("title").value;
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
 
   // Check if any field is empty
   // If empty, show an alert and stop the function

@@ -2,14 +2,14 @@
 function submitBooking() {
 
   // Get what the user typed in each field
-  var title = document.getElementById("title").value;
-  var firstName = document.getElementById("firstName").value;
-  var lastName = document.getElementById("lastName").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var roomType = document.getElementById("roomType").value;
-  var checkIn = document.getElementById("checkIn").value;
-  var checkOut = document.getElementById("checkOut").value;
+  let title = document.getElementById("title").value;
+  let firstName = document.getElementById("firstName").value;
+  let lastName = document.getElementById("lastName").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let roomType = document.getElementById("roomType").value;
+  let checkIn = document.getElementById("checkIn").value;
+  let checkOut = document.getElementById("checkOut").value;
 
   // Check if any field is empty
   // If empty, show an alert and stop the function
