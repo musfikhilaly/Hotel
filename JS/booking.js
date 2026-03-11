@@ -1,7 +1,7 @@
-// This function runs when the user clicks Book Now
+// This function runs when the user clicks "Book Now"
 function submitBooking() {
 
-  // Get the values from the form
+  // Get what the user typed in each field
   var title = document.getElementById("title").value;
   var firstName = document.getElementById("firstName").value;
   var lastName = document.getElementById("lastName").value;
@@ -11,7 +11,8 @@ function submitBooking() {
   var checkIn = document.getElementById("checkIn").value;
   var checkOut = document.getElementById("checkOut").value;
 
-  // Check if all fields are filled in
+  // Check if any field is empty
+  // If empty, show an alert and stop the function
   if (title == "" || firstName == "" || lastName == "" || email == "" || phone == "" || roomType == "" || checkIn == "" || checkOut == "") {
     alert("Please fill in all fields before submitting.");
     return;
@@ -20,8 +21,10 @@ function submitBooking() {
   // Hide the form
   document.getElementById("bookingForm").style.display = "none";
 
-  // Show the confirmation message with the booking details
+  // Show the confirmation message
   document.getElementById("confirmationMessage").style.display = "block";
+
+  // Write the booking details inside the confirmation message
   document.getElementById("confirmationText").innerHTML =
     "Thank you for your booking, " + title + ". " + lastName + "!<br><br>" +
     "<strong>Name:</strong> " + firstName + " " + lastName + "<br>" +
