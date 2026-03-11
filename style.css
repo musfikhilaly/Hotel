@@ -17,3 +17,29 @@ object-fit:cover;
 footer{
 margin-top:40px;
 }
+
+/* Page full height */
+html, body {
+height: 100%;
+margin: 0;
+}
+
+/* Main page layout */
+.page-container{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* Content grows to push footer down */
+.content-wrap{
+flex:1;
+}
+
+/* Footer styling */
+footer{
+background-color:#212529;
+color:white;
+text-align:center;
+padding:20px;
+}
