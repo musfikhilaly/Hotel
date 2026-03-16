@@ -18,6 +18,11 @@ function submitBooking() {
     return;
   }
 
+  // Hide the title, description and line
+  document.getElementById("bookingTitle").style.display = "none";
+  document.getElementById("bookingDescription").style.display = "none";
+  document.getElementById("bookingLine").style.display = "none";
+
   // Hide the form
   document.getElementById("bookingForm").style.display = "none";
 
