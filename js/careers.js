@@ -18,6 +18,10 @@ function submitCareers() {
   // Hide the form
   document.getElementById("careerForm").style.display = "none";
 
+   // Hide the title, description and line
+  document.getElementById("careerHeader").style.display = "none";
+   
+
   // Show the thank you message
   document.getElementById("thankYouMessage").style.display = "block";
 
